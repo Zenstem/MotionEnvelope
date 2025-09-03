@@ -6,6 +6,7 @@
     <title>Zenstem | MotionEnvelopeSim</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -20,12 +21,12 @@
     <script>
       var canvas = document.querySelector("#unity-canvas");
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Release.loader.js";
+      var loaderUrl = buildUrl + "/MotionEnvelope.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Release.data.unityweb",
-        frameworkUrl: buildUrl + "/Release.framework.js.unityweb",
-        codeUrl: buildUrl + "/Release.wasm.unityweb",
+        dataUrl: buildUrl + "/MotionEnvelope.data.unityweb",
+        frameworkUrl: buildUrl + "/MotionEnvelope.framework.js.unityweb",
+        codeUrl: buildUrl + "/MotionEnvelope.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "MotionEnvelopeSim",
